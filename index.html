@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Interactivity Assignment</h1>
+    </header>
+
+    <main>
+      <!-- Interactive Elements Section -->
+      <section id="interactive-section">
+        <h2>Interactive Elements</h2>
+
+        <!-- Counter Game -->
+        <div class="interactive-item">
+          <h3>Counter Game</h3>
+          <p>Click the buttons to increase or decrease the counter:</p>
+          <div class="counter-container">
+            <button id="decrease">-</button>
+            <span id="counter">0</span>
+            <button id="increase">+</button>
+          </div>
+          <p id="counter-message"></p>
+        </div>
+
+        <!-- Light/Dark Mode Toggle -->
+        <div class="interactive-item">
+          <h3>Light/Dark Mode Toggle</h3>
+          <button id="theme-toggle">Toggle Theme</button>
+          <p>This will change the page theme between light and dark.</p>
+        </div>
+
+        <!-- Collapsible FAQ -->
+        <div class="interactive-item">
+          <h3>FAQ Section</h3>
+          <div class="faq-item">
+            <button class="faq-toggle">What is JavaScript?</button>
+            <div class="faq-content">
+              <p>
+                JavaScript is a programming language that allows you to create
+                dynamically updating content for websites.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle">Why is interactivity important?</button>
+            <div class="faq-content">
+              <p>
+                Interactivity makes websites more engaging and user-friendly by
+                responding to user actions without page reloads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="form-section">
+        <h2>Contact Form</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <span class="error" id="password-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+
+          <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+
+        <div id="form-result" class="hidden"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 JavaScript Interactivity Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
